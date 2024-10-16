@@ -70,11 +70,14 @@ int getIntInput(char message[]) {
 	return input;
 }
 
-void setLength(int input, int* length) {
-	if (input >= 0 && input < 100) {
+void setLength(int input, int* length) 
+{
+	if (input > 0 && input < 100)
+	{  // Only allow input between 1 and 99
 		*length = input;
 	}
 }
+
 
 void setWidth(int input, int* width) {
 	if (input > 0 && input <= 100) {
